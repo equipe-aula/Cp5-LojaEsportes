@@ -1,5 +1,8 @@
 import ProdutoCard from "../components/ProdutoCard"
-import produtoImg from "../assets/produto.jpg"
+import produtoImg from "../assets/BolaFutebolAmericano.jpg"
+import Camisasele from "../assets/imagemproduto.jpg"
+import Kitbase from "../assets/KitBaseball.jpg"
+import KitTenis from "../assets/KitTenis.jpg"
 
 const Produtos = () => {
 
@@ -9,10 +12,7 @@ const Produtos = () => {
         { id: 2, nome: "Produto 02", preco: "R$ 150,00", imagem: produtoImg },
         { id: 3, nome: "Produto 03", preco: "R$ 200,00", imagem: produtoImg },
         { id: 4, nome: "Produto 04", preco: "R$ 250,00", imagem: produtoImg },
-        { id: 5, nome: "Produto 05", preco: "R$ 300,00", imagem: produtoImg },
-        { id: 6, nome: "Produto 06", preco: "R$ 350,00", imagem: produtoImg },
-        { id: 7, nome: "Produto 07", preco: "R$ 400,00", imagem: produtoImg },
-        { id: 8, nome: "Produto 08", preco: "R$ 450,00", imagem: produtoImg }
+       
     ];
 
     return (
