@@ -1,0 +1,93 @@
+
+@theme static {
+    --color-primaria: #818cf8;
+    --color-secundaria: #4338ca;
+    --color-fundo: #0f172a;
+    --color-superficie: #020617;
+    --color-texto: #f8fafc;
+    --color-texto-suave: #94a3b8;
+
+    --font-titulo: "Poppins", sans-serif;
+    --font-texto: "Poppins", sans-serif;
+}
+
+
+body {
+    background-color: var(--color-fundo);
+    color: var(--color-texto);
+    font-family: var(--font-texto);
+}
+
+.logo {
+    transition: letter-spacing 0.3s;
+}
+
+.logo:hover {
+    letter-spacing: 10px;
+}
+
+
+.titulo {
+    background-image: linear-gradient(to right, var(--color-primaria), var(--color-secundaria));
+    text-transform: uppercase;
+    font-weight: 700;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: var(--font-titulo);
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: var(--color-primaria);
+    color: var(--color-fundo);
+    padding: 0.75rem 1.75rem;
+    border-radius: 9999px;
+    border: 2px solid var(--color-primaria);
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+
+.btn-contorno {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--color-primaria);
+    padding: 0.75rem 1.75rem;
+    border-radius: 9999px;
+    border: 2px solid var(--color-primaria);
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-contorno:hover {
+    transform: scale(1.05);
+}
+
+
+.campo {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border-radius: 0.75rem;
+    background-color: var(--color-fundo);
+    color: var(--color-texto);
+    border: 1px solid var(--color-texto-suave);
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.campo::placeholder {
+    color: var(--color-texto-suave);
+}
+
+.campo:focus {
+    border-color: var(--color-primaria);
+}
